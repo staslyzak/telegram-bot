@@ -58,8 +58,7 @@ bot.on('message', async (msg) => {
             const time = new Date(msg.date * 1000);
             const hours = needZero(parseInt((deadline - msg.date) / 3600));
             const mins = needZero(parseInt((deadline - msg.date) % 3600 / 60));
-            const sec = needZero(parseInt((deadline - msg.date) % 60));
-            bot.sendMessage(chatId, `Time left ${hours}:${mins}:${sec}`);
+            bot.sendMessage(chatId, `Time left ${hours}:${mins}`);
             break;
         default:
             bot.sendMessage(chatId, `hello`);
