@@ -24,22 +24,6 @@ const sendNotification = async (text) => {
   users.forEach(item=>bot.sendMessage(item,text));
 };
 
-// bot.on('message', (msg) => {
-//   const DATE = new Date(msg.date * 1000);
-//   const chatId = msg.chat.id;
-  
-//   let receivedHours = parseInt(parseInt(DATE.getHours() + 2));
-
-//   if(receivedHours < 10 ) receivedHours = `0${parseInt(DATE.getHours() + 2)}`;
-//   if(receivedHours > 24 ) receivedHours = `0${parseInt(DATE.getHours() + 2) - 24}`; 
-
-//   let receivedMinutes = (parseInt(DATE.getMinutes()) < 10) ? `0${parseInt(DATE.getMinutes())}` : parseInt(DATE.getMinutes());
-//   let receivedSeconds = (parseInt(DATE.getSeconds()) < 10) ? `0${parseInt(DATE.getSeconds())}` : parseInt(DATE.getSeconds());
-
-//   console.log(msg);
-
-//   bot.sendMessage(chatId, `What's up at ${receivedHours}:${receivedMinutes}:${receivedSeconds}`);
-// });
 const deadline = 1552417200;
 
 // functionality of showing time remaining before the deadline hh:mm:ss
