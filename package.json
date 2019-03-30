@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "10.14.2"
+  },
   "dependencies": {
     "mongodb": "^3.1.13",
     "node-telegram-bot-api": "^0.30.0"
